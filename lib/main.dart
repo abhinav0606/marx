@@ -11,6 +11,11 @@ class MyApp extends StatelessWidget{
       color: Colors.white,
       title: 'MarX',
       home: SplashScreen(),
+      theme: ThemeData(
+        primaryColor: Colors.lightBlue[800],
+        accentColor: Colors.lightBlue[800],
+        fontFamily: 'Raleway',
+      ),
     );
   }
 }
