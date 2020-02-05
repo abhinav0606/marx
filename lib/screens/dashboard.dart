@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:marx/screens/music.dart';
 import 'package:marx/screens/weather.dart';
 
 class Dashboard extends StatelessWidget{
@@ -29,10 +30,7 @@ class _DashboardNavState extends State<DashboardNav> {
       'Index 1: Business',
       style: optionStyle,
     ),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
+    Music(),
   ];
 
   void _onItemTapped(int index) {

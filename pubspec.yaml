@@ -48,15 +48,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-     - icons8-martian-64.png
-     - grey_background.jpg
-     - dots.png
-     - menu.png
-     - line.png
-     - locate_icon.png
-     - clearday.png
-     - rain.png
-     - clearsky.png
+     - assets/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

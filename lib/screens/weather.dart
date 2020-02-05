@@ -14,21 +14,14 @@ class WeatherState extends State<Weather> {
   final desc = "Clear";
   final city = "New York";
 
-  //var weatherx;
-
   final int humidity = 92;
   final int pressure = 162;
   final int temp = 19;
-
-  final double humidity2 = 87;
-  final double pressure2 = 157;
-  final double windspeed = 11, windspeed2 = 23;
+  final double windspeed = 11;
 
   @override
   void initState() {
     super.initState();
-//    setBg();
-//    _loadWeatherData();
   }
 
   @override
@@ -55,15 +48,15 @@ class WeatherState extends State<Weather> {
 
     final wind = LinearProgressIndicator(
       backgroundColor: Colors.white24,
-      value: 11,
+      value: 11/100,
     );
     final pressurec = LinearProgressIndicator(
       backgroundColor: Colors.white24,
-      value: 70,
+      value: 162/500,
     );
     final humidityc = LinearProgressIndicator(
       backgroundColor: Colors.white24,
-      value: 92,
+      value: 92/100,
     );
 
     return new Material(
