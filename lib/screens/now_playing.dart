@@ -203,7 +203,7 @@ class PreferencesBoard extends StatelessWidget {
           color: Color(0xFFC7D2E3),
         ),
         Icon(
-          Icons.loop,
+          Icons.shuffle,
           size: 35,
           color: Color(0xFFC7D2E3),
         ),
