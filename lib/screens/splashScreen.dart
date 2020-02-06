@@ -112,7 +112,7 @@ class _SplashScreenState extends State<SplashScreen>
                             style: Theme.of(context)
                                 .textTheme
                                 .title
-                                .copyWith(color: Colors.black),
+                                .copyWith(color: Color(0xFF37474F)),
                           ),
                           SizedBox(
                             height: 15,

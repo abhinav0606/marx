@@ -104,23 +104,44 @@ class NowPlayingState extends State<NowPlaying> {
             padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: Column(
               children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.only(right: 12.0),
-                  child: Align(
-                    alignment: Alignment.centerRight,
-                    child: Text(
-                      "0:00",
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w700,
-                        color: Color(0xFFADB9CD),
-                        letterSpacing: 1,
+                Row(
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.only(left: 12.0),
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          "0:00",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w700,
+                            color: Color(0xFFADB9CD),
+                            letterSpacing: 1,
+                          ),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
                       ),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
                     ),
-                  ),
-                ),
+                    SizedBox(width: 235),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 12.0),
+                      child: Align(
+                        alignment: Alignment.centerRight,
+                        child: Text(
+                          widget._currentSong.length.substring(0, 5),
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w700,
+                            color: Color(0xFFADB9CD),
+                            letterSpacing: 1,
+                          ),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                    ),
+                  ],),
                 NowPlayingSlider(),
               ],
             ),
