@@ -23,32 +23,46 @@ class MusicState extends State<Music> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      backgroundColor: Colors.grey[300],
-      body: Column(
-        children: <Widget>[
-        SizedBox(height: 52),
-        Expanded(
-          child: GridView.count(
-            padding: EdgeInsets.all(2),
-            crossAxisCount: 2,
-            children: List.generate(songsList.length, (index) {
-              return Center(
-                child: SongCard(
-                  image: songsList[index].image,
-                  title: songsList[index].title,
-                  length: songsList[index].length,
-                  onPress: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => NowPlaying(songsList[index]))
-                    );
-                  },
+      body: Stack(
+          children: <Widget>[
+            Opacity(
+              opacity: 0.8,
+              child: Image.asset(
+                "assets/gradient_background.jpg",
+                fit: BoxFit.cover,
+                height: double.infinity,
+                width: double.infinity,
+                alignment: Alignment.center,
+              ),
+            ),
+            Column(
+              children: <Widget>[
+                SizedBox(height: 52),
+                Expanded(
+                  child: GridView.count(
+                    padding: EdgeInsets.all(2),
+                    crossAxisCount: 2,
+                    children: List.generate(songsList.length, (index) {
+                      return Center(
+                        child: SongCard(
+                          image: songsList[index].image,
+                          title: songsList[index].title,
+                          length: songsList[index].length,
+                          onPress: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) =>
+                                NowPlaying(songsList[index]))
+                            );
+                          },
+                        ),
+                      );
+                    }),
+                 ),
                 ),
-              );
-            }),
-          ),
-      ),]
-
+              ]
+            ),
+          ]
       ),
     );
   }
