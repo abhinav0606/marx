@@ -1,16 +1,11 @@
-# marx
+# MarX
 
 Flutter application for Advaita
+Includes UI for weather, email and music player clients
 
-## Getting Started
+## Running the project
 
-This project is a starting point for a Flutter application.
+This project is written using Flutter, an open-source framework used for developing cross-platform applications
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+To run the app on your device, run it using release flag to get optimized experience
+By default, the code runs in debug mode (meant for developers of app), which provides a slower experience as compared to the actual release APK experience
